@@ -7,6 +7,7 @@ import { WeatherContext } from "../../context";
 
 function WeatherBoard() {
     const { weatherData, loading } = useContext(WeatherContext);
+    console.log("WeatherBoard", weatherData);
 
     return (
         <div className="container">
