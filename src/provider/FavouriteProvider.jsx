@@ -5,7 +5,7 @@ const FavourtieProvider = ({ children }) => {
     const [favourites, setFavourites] = useLocalStorage("favourites", []);
 
     const addToFavourites = (latitude, longitude, location) => {
-        setFavourites(...favourites, { latitude, longitude, location });
+        setFavourites([...favourites, { latitude, longitude, location }]);
     };
 
     const removeFromFavourites = (location) => {
